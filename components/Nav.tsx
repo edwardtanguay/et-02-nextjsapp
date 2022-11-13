@@ -6,8 +6,8 @@ export const Nav = () => {
 			<NavLink exact href="/">
 				Welcome
 			</NavLink>
-			<NavLink href="/code">Code</NavLink>
-			<NavLink href="/techitems">Tech Items</NavLink>
+			<NavLink exact href="/code">Code</NavLink>
+			<NavLink exact href="/techitems">Tech Items</NavLink>
 		</nav>
 	);
 };
