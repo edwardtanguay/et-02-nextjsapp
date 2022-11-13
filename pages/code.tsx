@@ -2,6 +2,7 @@
 import { SiteTitle } from '../components/SiteTitle';
 import { Nav } from '../components/Nav';
 import Head from 'next/head';
+import styles from '../styles/Code.module.scss';
 
 const Code = () => {
 	return (
@@ -19,7 +20,7 @@ const Code = () => {
 				<Nav />
 			</section>
 			<section className="sitePage">
-				<p>code examples will appear here</p>
+				<p className={styles.normal}>code examples will appear here</p>
 			</section>
 		</>
 	);

@@ -21,7 +21,7 @@ const Home: NextPage = () => {
 				<Nav />
 			</section>
 			<section className="sitePage">
-				<p>image goes here</p>
+				<p className={styles.normal}>image goes here</p>
 			</section>
 		</>
 	);
