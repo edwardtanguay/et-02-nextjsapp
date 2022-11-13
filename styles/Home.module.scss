@@ -1,3 +1,7 @@
+$card-background: beige;
+$card-font-color: brown;
+$card-font-color-hover:orange;
+
 .container {
 	padding: 0 2rem;
 }
@@ -29,18 +33,19 @@
 		border: 1px solid blue;
 	}
 
+	.title a {
+		text-decoration: none;
+	}
+
+	.title a:hover,
+	.title a:focus,
+	.title a:active {
+		text-decoration: underline;
+		color: $card-font-color-hover;
+	}
+
 }
 
-.title a {
-	color: #0070f3;
-	text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-	text-decoration: underline;
-}
 
 .title {
 	margin: 0;
@@ -80,19 +85,19 @@
 	margin: 1rem;
 	padding: 1.5rem;
 	text-align: left;
-	color: inherit;
+	color: $card-font-color;
 	text-decoration: none;
 	border: 1px solid #eaeaea;
 	border-radius: 10px;
 	transition: color 0.15s ease, border-color 0.15s ease;
 	max-width: 300px;
-	background-color: #eee;
+	background-color: $card-background;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-	color: #0070f3;
+	color: $card-font-color-hover;
 	border-color: #0070f3;
 }
 
