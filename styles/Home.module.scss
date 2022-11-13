@@ -1,6 +1,8 @@
+@import "mixins";
+
 $card-background: beige;
 $card-font-color: brown;
-$card-font-color-hover:orange;
+$card-font-color-hover: orange;
 
 .container {
 	padding: 0 2rem;
@@ -117,9 +119,13 @@ $card-font-color-hover:orange;
 	margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@include smartphone() {
 	.grid {
 		width: 100%;
 		flex-direction: column;
+	}
+
+	.card:active {
+		color: red;
 	}
 }
