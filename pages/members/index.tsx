@@ -5,6 +5,7 @@ import { Nav } from '../../components/Nav';
 import { DynamicHead } from '../../components/DynamicHead';
 import axios from 'axios';
 import router from 'next/router';
+import styles from '../../styles/Members.module.scss';
 
 interface IProps {
 	members: any[];
@@ -47,21 +48,22 @@ export default function Members(props:IProps) {
 					</a>
 					.
 				</code>
-				<p>There are {members.length} members.</p>
-				<div className="members">
+				<h2>There are {members.length} members:</h2>
+				<div className={styles.members}>
 					{members.map((member, index) => {
 						return (
 							<div
 								key={index}
-								className="member"
+								className={styles.member}
 								onClick={() => handleClickMember(member)}
 							>
 								<img
+									className={styles.main}
 									src={`https://edwardtanguay.vercel.app/share/images/employees/employee_${member.employeeID}.jpg`}
 									alt={`member: ${member.firstName} ${member.lastName}`}
 								/>
-								<div className="info">
-									<div className="name">
+								<div className={styles.info}>
+									<div className={styles.name}>
 										{member.firstName} {member.lastName}
 									</div>
 								</div>
