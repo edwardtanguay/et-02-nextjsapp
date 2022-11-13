@@ -1,0 +1,25 @@
+$main-link-color: rgb(214, 147, 85);
+
+h2.main {
+	color: $main-link-color;
+}
+
+p.description {
+	color: orange;
+	font-style: italic;
+}
+
+a.moreInfo {
+	text-decoration: underline;
+	color: rgb(195, 195, 79);
+}
+
+a.main {
+	color: $main-link-color;
+}
+
+code.main {
+	color: #888;
+	font-style: italic;
+	font-size: .9rem;
+}

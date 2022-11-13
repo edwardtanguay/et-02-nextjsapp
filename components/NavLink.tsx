@@ -25,11 +25,11 @@ export const NavLink = (props: IProps) => {
 	);
 };
 
-NavLink.propTypes = {
-	href: PropTypes.string.isRequired,
-	exact: PropTypes.bool,
-};
+// NavLink.propTypes = {
+// 	href: PropTypes.string.isRequired,
+// 	exact: PropTypes.bool,
+// };
 
-NavLink.defaultProps = {
-	exact: false,
-};
+// NavLink.defaultProps = {
+// 	exact: false,
+// };
