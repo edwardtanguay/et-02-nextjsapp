@@ -1,8 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
+import { Nav } from '../components/Nav';
+import { SiteHeader } from '../components/SiteHeader';
 
 const Home: NextPage = () => {
 	return (
@@ -16,6 +17,9 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/code.ico" />
 			</Head>
 
+			<SiteHeader />
+			<Nav />
+
 			<main className={styles.main}>
 				<h1 className={styles.title}>
 					Welcome to Edward's Next.js site.
@@ -27,18 +31,23 @@ const Home: NextPage = () => {
 						href="http://edwardtanguay.vercel.app/howtos"
 					>
 						<h2>Howtos</h2>
-						<p>Edward's Howtos - instructions on how to do many things </p>
+						<p>
+							Edward's Howtos - instructions on how to do many
+							things{' '}
+						</p>
 					</a>
 					<a
 						className={styles.card}
 						href="http://edwardtanguay.vercel.app/flashcards"
 					>
 						<h2>Flashcards</h2>
-						<p>Edward's Flashcards - various infos Edward has collected</p>
+						<p>
+							Edward's Flashcards - various infos Edward has
+							collected
+						</p>
 					</a>
 				</div>
 			</main>
-
 		</div>
 	);
 };
