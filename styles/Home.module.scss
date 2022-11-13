@@ -2,14 +2,13 @@
 
 $card-background: beige;
 $card-font-color: brown;
-$card-font-color-hover: orange;
+$card-font-color-hover: black;
 
 .container {
 	padding: 0 2rem;
 }
 
 .main {
-	min-height: 100vh;
 	padding: 4rem 0;
 	flex: 1;
 	display: flex;
@@ -53,6 +52,8 @@ $card-font-color-hover: orange;
 	margin: 0;
 	line-height: 1.15;
 	font-size: 4rem;
+	color: #888;
+	margin-bottom: 1rem;
 }
 
 .title,
