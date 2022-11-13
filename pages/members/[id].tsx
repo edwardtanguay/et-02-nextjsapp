@@ -67,7 +67,7 @@ const Members = (props: IProps) => {
 				</code>
 				<div className={styles.singleMember}>
 					<img
-						src={`https://edwardtanguay.netlify.app/share/images/employees/employee_${member.employeeID}.jpg`}
+						src={`https://edwardtanguay.vercel.app/share/images/employees/employee_${member.employeeID}.jpg`}
 						alt={`member: ${member.firstName} ${member.lastName}`}
 					/>
 					<div className={styles.info}>
